@@ -1,0 +1,214 @@
+/* 기본 스타일 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+.logo-image {
+    width: 200px;     /* 너비 원하는 만큼 조절 (예: 80px) */
+    height: auto;    /* 비율 유지 */
+    border-radius: 50%; /* 둥글게 하고 싶을 때만 */
+}
+
+header h1 {
+    color: #1e40af;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+    padding: 2rem 0;
+}
+
+.club-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+/* 미디어 쿼리로 반응형 그리드 설정 */
+@media (min-width: 768px) {
+    .club-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .club-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.club-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+    display: block;
+}
+
+.club-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.club-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.club-header h3 {
+    color: #1e40af;
+    font-size: 1.25rem;
+}
+
+.club-category {
+    background-color: #e0e7ff;
+    color: #1e40af;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.club-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.view-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #1e40af;
+    font-size: 0.875rem;
+}
+
+.arrow {
+    margin-left: 0.25rem;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #1e40af;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* 상세 페이지 스타일 */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.back-arrow {
+    margin-right: 0.5rem;
+}
+
+.club-detail {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.club-title {
+    color: #1e40af;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.club-description {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.club-info {
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.club-info h2 {
+    color: #1e40af;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    margin-bottom: 1rem;
+}
+
+.info-label {
+    color: #1e40af;
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    margin-right: 1rem;
+}
+
+.back-button {
+    display: block;
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1c366b;
+}

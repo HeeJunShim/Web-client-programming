@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>봄날 - 청운대학교 봉사동아리</title>
+    <style>
+        /* 기본 스타일 리셋 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #1e40af;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        header h1 {
+            color: #1e40af;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            color: #666;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        /* 메인 콘텐츠 스타일 */
+        main {
+            padding: 2rem 0;
+        }
+
+        /* 상세 페이지 스타일 */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #1e40af;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .back-arrow {
+            margin-right: 0.5rem;
+        }
+
+        .club-detail {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .club-title {
+            color: #1e40af;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .club-description {
+            color: #444;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .club-info {
+            background-color: #f0f7ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .club-info h2 {
+            color: #1e40af;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+        }
+
+        .info-label {
+            color: #1e40af;
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+            margin-right: 1rem;
+        }
+
+        .back-button {
+            display: block;
+            background-color: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 0 auto;
+            max-width: 250px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #1c366b;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #1e40af;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-placeholder">청운대 로고</div>
+            </div>
+            <h1>청운대학교 인천캠퍼스</h1>
+            <h2>중앙동아리 소개</h2>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main>
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <span class="back-arrow">←</span>
+                <span>메인페이지로 돌아가기</span>
+            </a>
+
+            <div class="club-detail">
+                <h1 class="club-title">봄날</h1>
+                <p class="club-description">지역사회에 봉사하며 나눔을 실천하는 동아리입니다.</p>
+
+                <div class="club-info">
+                    <h2>동아리 상세 정보</h2>
+                    
+                    <div class="info-item">
+                        <span class="info-label">동아리방 위치:</span>
+                        <span>인문관 2층</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">활동 내용:</span>
+                        <span>지역 봉사활동 및 기부 행사</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">모임 시간:</span>
+                        <span>매주 토요일 오전 10시</span>
+                    </div>
+                </div>
+
+                <a href="index.html" class="back-button">메인페이지로 돌아가기</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <p>© 2025 청운대학교 인천캠퍼스 중앙동아리</p>
+        </div>
+    </footer>
+</body>
+</html>
